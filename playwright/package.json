@@ -1,0 +1,28 @@
+{
+    "name": "ty-lighthouse-automation",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test --project=chromium --headed",
+        "clean": "rm -rf",
+        "testTag": "npx playwright test --project=chromium --headed --grep"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.35.1",
+        "lighthouse": "9.6.8",
+        "playwright": "1.28.1",
+        "ts-loader": "^9.4.3",
+        "webpack": "^5.87.0",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "@lighthousejs/types": "^0.0.3",
+        "get-port": "^7.0.0",
+        "playwright-lighthouse": "2.2.2"
+    }
+}
